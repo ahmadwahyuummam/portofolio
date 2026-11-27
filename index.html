@@ -86,8 +86,7 @@
       <p class="exp">Email: <span style="color: #13bbff; font-weight: 500;">ahmadwahyuummam1@gmail.com</span></p>
       <p class="exp">Phone: <span style="color: #13bbff; font-weight: 500;">085826350835</span></p>
       <p class="exp">Freelance: <span style="color: #13bbff; font-weight: 500;">Available Soon</span></p>
-      </p>
-          <p class="exp">
+      <p class="exp">
             Portofolio:
             <a
               href="https://canva.link/fdk1es9rwg6wce7"
@@ -95,12 +94,36 @@
               rel="noopener noreferrer"
               aria-label="Portofolio"
               title="Portofolio"
-              style="color: #13bbff; font-weight: 500; text-decoration: none;"
+              class="btn portfolio-link"
+              onclick="this.style.opacity='0.45';"
             >
               <i class="ri-briefcase-4-fill"></i>
               <span>Portofolio</span>
             </a>
           </p>
+          <style>
+            .portfolio-link {
+              display: inline-flex;
+              align-items: center;
+              gap: 6px;
+              padding: 6px 14px;
+              margin-left: 6px;
+              border: 2px solid #13bbff;
+              border-radius: 8px;
+              color: #13bbff;
+              text-decoration: none;
+              font-weight: 500;
+              transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+            }
+            .portfolio-link:hover {
+              background-color: #13bbff;
+              color: #0b0c10;
+            }
+            .portfolio-link:active,
+            .portfolio-link:visited {
+              opacity: 0.45;
+            }
+          </style>
     </div>
     <a href="blog.html" class="btn">View All Project</a>
   </div>
