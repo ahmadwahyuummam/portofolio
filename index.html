@@ -86,15 +86,15 @@
       <p class="exp">Email: <span style="color: #13bbff; font-weight: 500;">ahmadwahyuummam1@gmail.com</span></p>
       <p class="exp">Phone: <span style="color: #13bbff; font-weight: 500;">085826350835</span></p>
       <p class="exp">Freelance: <span style="color: #13bbff; font-weight: 500;">Available Soon</span></p>
-      <p class="exp">
-            Portofolio:
+      <p class="exp" style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <span>Portofolio:</span>
             <a
               href="https://canva.link/fdk1es9rwg6wce7"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Portofolio"
               title="Portofolio"
-              class="btn portfolio-link"
+              class="portfolio-link"
             >
               <i class="ri-briefcase-4-fill"></i>
               <span>Portofolio</span>
@@ -104,50 +104,50 @@
             .portfolio-link {
               display: inline-flex;
               align-items: center;
-              gap: 8px;
-              padding: 8px 16px;
-              margin-left: 8px;
-              border: 2px solid #13bbff;
+              justify-content: center;
+              gap: 6px;
+              padding: 5px 12px;
+              line-height: 1.2;
+              font-size: 0.92rem;
+              font-weight: 500;
+              border: 1.5px solid #13bbff;
               border-radius: 6px;
               color: #13bbff;
-              background: linear-gradient(135deg, rgba(19, 187, 255, 0.08), rgba(0, 136, 255, 0.02));
+              background: linear-gradient(120deg, rgba(19, 187, 255, 0.1), rgba(0, 119, 255, 0.04));
               background-size: 200% 200%;
+              background-position: left center;
               text-decoration: none;
-              font-weight: 600;
-              position: relative;
-              overflow: hidden;
-              transition: all 0.35s ease;
-              box-shadow: 0 0 12px rgba(19, 187, 255, 0.15);
+              transition: background-position 0.35s ease, color 0.25s ease, border-color 0.25s ease, transform 0.15s ease, box-shadow 0.25s ease;
+            }
+            .portfolio-link i {
+              display: inline-flex;
+              align-items: center;
+              font-size: 1rem;
+              line-height: 1;
             }
             .portfolio-link:hover {
               color: #0b0c10;
-              background: linear-gradient(135deg, #13bbff, #38bdf8, #0077ff);
+              border-color: #38bdf8;
+              background: linear-gradient(120deg, #13bbff, #38bdf8, #0088ff);
               background-size: 200% 200%;
               background-position: right center;
-              border-color: #38bdf8;
-              box-shadow: 0 0 20px rgba(19, 187, 255, 0.55);
-              transform: translateY(-2px);
+              box-shadow: 0 0 12px rgba(19, 187, 255, 0.35);
             }
             .portfolio-link:active {
-              background: linear-gradient(135deg, #0077ff, #13bbff, #7dd3fc);
-              background-size: 250% 250%;
-              background-position: left center;
+              background: linear-gradient(120deg, #0088ff, #13bbff, #7dd3fc);
+              background-size: 220% 220%;
               color: #06080c;
-              transform: scale(0.96) translateY(0);
-              box-shadow: 0 0 26px rgba(56, 189, 248, 0.8);
-              animation: gradasiKlik 0.5s ease;
+              transform: scale(0.97);
+              animation: gradasiKlikPresisi 0.4s ease;
             }
-            @keyframes gradasiKlik {
+            @keyframes gradasiKlikPresisi {
               0% {
-                filter: brightness(1);
                 background-position: 0% 50%;
               }
               50% {
-                filter: brightness(1.3);
                 background-position: 100% 50%;
               }
               100% {
-                filter: brightness(1);
                 background-position: 0% 50%;
               }
             }
